@@ -13,7 +13,7 @@ This project simulates an IoT device sending temperature and humidity data to Az
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/Azure-IoT-Simulator.git
+   git clone https://github.com/Raduuuk/Azure-IoT-Simulator.git
 2. Navigate to the project directory:
 
    `cd Azure-IoT-Simulator`
