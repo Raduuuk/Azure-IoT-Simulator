@@ -29,6 +29,6 @@ try:
         send_data()
         time.sleep(15)
 except KeyboardInterrupt:
-    print("Завершение отправки данных")
+    print("Close")
 finally:
     client.shutdown()
