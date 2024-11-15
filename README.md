@@ -21,6 +21,6 @@ This project simulates an IoT device sending temperature and humidity data to Az
 3. Install required libraries:
    `pip install azure-iot-device`
 ## Usage
-1. Open the script file `azure_iot.py` and replace `"YOUR_PRIMARY_CONNECTION_STRING"` with your Azure IoT Hub device connection string.
+1. Open the script file `azure_iot.py` and replace `"CONNECTION_STRING"` with your Azure IoT Hub device connection string.
 2. Run the script:
 `python azure_iot.py`
