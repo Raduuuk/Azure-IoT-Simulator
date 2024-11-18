@@ -1,5 +1,6 @@
 import random
 import time
+import json
 from azure.iot.device import IoTHubDeviceClient, Message
 
 CONNECTION_STRING = "HostName=DataHub.azure-devices.net;DeviceId=virtualSensor;SharedAccessKey=2eZEOJyZhtZO7TzndUoPKlnnggp2rxrl246DK+Y4MAw="
@@ -11,16 +12,16 @@ def send_data():
     temperature = random.uniform(15.0, 30.0)
     humidity = random.uniform(30.0, 70.0)
 
-    # Сcreate message
+    # Сreate message
     data = {
         "temperature": temperature,
         "humidity": humidity
     }
-    message = Message(str(data))
+    message = Message(json.dumps(data))
 
      # send data
     client.send_message(message)
-    print(f"Message was sent: Temperature = {temperature:.2f} °C, Humidity = {humidity:.2f}%")
+    print(f"Message sent: {data}")
 
 
 # send every 15 sec
